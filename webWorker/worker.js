@@ -1,1 +1,1 @@
-onmessage = (e) => postMessage(`Your name: ${e.data}`);
+onmessage = e => postMessage(`Your name: ${e.data}`);

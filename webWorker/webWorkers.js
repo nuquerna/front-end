@@ -7,8 +7,8 @@ function init() {
 
     worker = new Worker('worker.js');
 
-    button.addEventListener('click', send, false);
-    worker.addEventListener('message', received, false);
+    button.addEventListener('click', send);
+    worker.addEventListener('message', received);
 }
 
 const send = () => worker.postMessage(name.value);
